@@ -57,41 +57,41 @@ public class Main {
         store.addMedia(mu2);
 
         store.displayMedias();
-//
-//        // 3. Simulate usage
-//
-//        // a. Users purchase different books
-//        b1.purchase(u1);
-//        b2.purchase(u2);
-//        n2.purchase(u3);
-//        a2.purchase(u4);
-//        a1.purchase(u5);
-//
-//        // b. Users checkout from cart
-//        u1.addToCart(n1);
-//        u1.addToCart(mu1);
-//        u1.checkout();
-//
-//        // c. Watch movies and listen to music
-//        m1.watch(u2);
-//        mu2.listen(u2);
-//
-//        // d. Show similar movies by director
-//        m1.recommendSimilarMovies(new java.util.ArrayList<>(java.util.List.of(m1, m2)));
-//
-//        // e. Generate playlist
-//        mu1.generatePlayList(new java.util.ArrayList<>(java.util.List.of(mu1, mu2)));
-//
-//        // 4. Display users and media
-//        System.out.println("\n==== Users ====");
-//        store.displayUsers();
-//
-//        System.out.println("\n==== Media in Store ====");
-//        store.displayMedias();
-//
-//        System.out.println("\n==== Hassan's Purchased Items ====");
-//        for (Media m : u1.getPurchaseMediaList()) {
-//            System.out.println("- " + m.getTitle() + " [" + m.getMediaType() + "]");
-//        }
+
+        // 3. Simulate usage
+
+        // a. Users purchase different books
+        b1.purchase(u1);
+        b2.purchase(u2);
+        n2.purchase(u3);
+        a2.purchase(u4);
+        a1.purchase(u5);
+
+        // b. Users checkout from cart
+        u1.addToCart(n1);
+        u1.addToCart(mu1);
+        u1.checkout();
+
+        // c. Watch movies and listen to music
+        m1.watch(u2);
+        mu2.listen(u2);
+
+        // d. Show similar movies by director
+        m1.recommendSimilarMovies(new java.util.ArrayList<>(java.util.List.of(m1, m2)));
+
+        // e. Generate playlist
+        mu1.generatePlayList(new java.util.ArrayList<>(java.util.List.of(mu1, mu2)));
+
+        // 4. Display users and media
+        System.out.println("\n==== Users ====");
+        store.displayUsers();
+
+        System.out.println("\n==== Media in Store ====");
+        store.displayMedias();
+
+        System.out.println("\n==== Hassan's Purchased Items ====");
+        for (Media m : u1.getPurchaseMediaList()) {
+            System.out.println("- " + m.getTitle() + " [" + m.getMediaType() + "]");
+        }
     }
 }
